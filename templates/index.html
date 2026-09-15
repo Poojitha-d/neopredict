@@ -50,8 +50,8 @@
                         <a href="#assessmentSection" class="btn btn-teal-primary btn-lg rounded-pill px-4 shadow">
                             <i class="bi bi-play-circle me-1"></i> Run Patient Assessment
                         </a>
-                        <a href="#apiDocsSection" class="btn btn-outline-light btn-lg rounded-pill px-4">
-                            <i class="bi bi-code-slash me-1"></i> REST API
+                        <a href="#abstractSection" class="btn btn-outline-light btn-lg rounded-pill px-4">
+                            <i class="bi bi-file-earmark-medical me-1"></i> Research & Abstract
                         </a>
                     </div>
                 </div>
@@ -404,51 +404,6 @@
             </div>
         </section>
 
-        <!-- REST API Section -->
-        <section class="mt-5 pt-4 border-top" id="apiDocsSection">
-            <div class="card border-0 shadow-sm rounded-4 p-4">
-                <div class="d-flex align-items-center mb-3">
-                    <span class="icon-bubble bg-dark text-white me-3"><i class="bi bi-terminal"></i></span>
-                    <div>
-                        <h5 class="mb-0 fw-bold">Edge & IoT REST API Integration</h5>
-                        <small class="text-muted">Direct programmatic telemetry interface for Raspberry Pi 4 / Arduino / Bedside telemetry</small>
-                    </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <span class="small fw-bold text-dark d-block mb-1">CURL Request</span>
-                        <pre class="bg-dark text-light p-3 rounded-3 small mb-0"><code>curl -X POST https://neopredict.onrender.com/api/predict   -H "Content-Type: application/json"   -d '{
-    "hr": 135,
-    "resp": 42,
-    "spo2": 98.0,
-    "temp": 37.0,
-    "sbp": 65,
-    "dbp": 38,
-    "room_temp": 26.0,
-    "humidity": 55,
-    "aqi": 35
-  }'</code></pre>
-                    </div>
-                    <div class="col-md-6">
-                        <span class="small fw-bold text-dark d-block mb-1">JSON Response Payload</span>
-                        <pre class="bg-dark text-light p-3 rounded-3 small mb-0"><code>{
-  "success": true,
-  "condition_risks": {
-    "apnea": {"risk_percent": 3.0, "level": "Normal"},
-    "bradycardia": {"risk_percent": 2.0, "level": "Normal"},
-    "hypoxia": {"risk_percent": 3.0, "level": "Normal"},
-    "sepsis": {"risk_percent": 20.9, "level": "Normal"}
-  },
-  "fusion": {
-    "composite_score": 9.8,
-    "status": "NORMAL",
-    "attention_weights": {"Apnea": 20.6, "Bradycardia": 19.9, ...}
-  }
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
 
     </main>
 
