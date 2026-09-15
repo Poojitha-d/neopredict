@@ -1,0 +1,161 @@
+/* NeoPredict Clinical Styling */
+:root {
+    --neo-teal: #0d9488;
+    --neo-teal-dark: #0f766e;
+    --neo-teal-light: #2dd4bf;
+    --neo-dark: #0f172a;
+    --neo-card-bg: #ffffff;
+    --neo-text-primary: #1e293b;
+    --neo-text-secondary: #64748b;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: var(--neo-text-primary);
+    -webkit-font-smoothing: antialiased;
+}
+
+.tracking-tight { letter-spacing: -0.025em; }
+.tracking-wider { letter-spacing: 0.05em; }
+
+.text-teal { color: var(--neo-teal) !important; }
+.text-teal-light { color: var(--neo-teal-light) !important; }
+.bg-teal-subtle { background-color: #ccfbf1 !important; }
+.btn-teal-primary {
+    background-color: var(--neo-teal);
+    color: #ffffff;
+    border: none;
+    transition: all 0.2s ease;
+}
+.btn-teal-primary:hover {
+    background-color: var(--neo-teal-dark);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.neo-nav {
+    background: linear-gradient(135deg, #0f172a 0%, #134e4a 100%);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #0f172a 0%, #115e59 70%, #0d9488 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.text-light-soft {
+    color: #e2e8f0;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 6px #22c55e;
+}
+
+.icon-bubble {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 1.25rem;
+}
+
+.preset-btn {
+    transition: all 0.15s ease;
+    font-weight: 500;
+}
+.preset-btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Composite Box States */
+.composite-panel {
+    background: #f1f5f9;
+    border: 2px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+.composite-panel.state-normal {
+    background: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #065f46;
+}
+.composite-panel.state-warning {
+    background: #fffbeb;
+    border-color: #fde68a;
+    color: #92400e;
+}
+.composite-panel.state-danger {
+    background: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
+.composite-panel.state-critical {
+    background: #450a0a;
+    border-color: #dc2626;
+    color: #ffffff;
+}
+.composite-panel.state-critical .text-muted {
+    color: #fca5a5 !important;
+}
+
+.status-pill {
+    background-color: #cbd5e1;
+    color: #334155;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+.status-pill.bg-success {
+    background-color: #10b981 !important;
+    color: white;
+}
+.status-pill.bg-warning {
+    background-color: #f59e0b !important;
+    color: white;
+}
+.status-pill.bg-danger {
+    background-color: #ef4444 !important;
+    color: white;
+}
+.status-pill.bg-dark-danger {
+    background-color: #b91c1c !important;
+    color: white;
+    box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
+    animation: pulseAlert 1.5s infinite;
+}
+
+@keyframes pulseAlert {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+}
+
+.condition-card {
+    transition: all 0.2s ease;
+}
+.condition-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.progress-sm {
+    height: 6px;
+    border-radius: 4px;
+}
+
+.attention-progress .progress-bar {
+    font-size: 0.7rem;
+    line-height: 18px;
+    font-weight: 600;
+}
