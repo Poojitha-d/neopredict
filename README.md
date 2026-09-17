@@ -7,14 +7,6 @@
 
 A deep learning-based multi-modal web platform for early neonatal health assessment and real-time risk prediction in Neonatal Intensive Care Units (NICUs).
 
----
-
-## Research Background & Abstract
-
-> **Research Paper**: *Deep Learning-Based Multi-Model Neonatal Health Prediction System with Real-Time Risk Assessment (NeoPredict)*  
-> **Authors**: Gundupalli Tejaswi Reddy, Choda Lahari, D Poojitha, Shaik Anum Tabasum  
-> **Institution**: Alliance School of Advanced Computing, Alliance University  
-
 Traditional neonatal monitoring systems often depend on predefined threshold rules, which generate frequent false alarms (85-90% false positive rate) and provide limited predictive insight. **NeoPredict** introduces an attention-based multi-model framework that continuously integrates physiological vital signs (Heart Rate, Respiration Rate, SpO₂, Temperature, Blood Pressure) with ambient environmental parameters (Incubator Temperature, Humidity, Air Quality Index) to predict acute conditions:
 - **Apnea of Prematurity (AOP)**
 - **Neonatal Bradycardia**
